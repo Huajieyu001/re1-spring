@@ -1,5 +1,7 @@
 package org.example.dao.impl;
 
+import org.example.dao.UserDao;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -8,6 +10,7 @@ import org.springframework.stereotype.Repository;
  * @Version 1.0
  * @Description TODO
  */
-@Repository("userDao")
-public class UserDaoImpl2 {
+@Repository("userDao2")
+//@Primary
+public class UserDaoImpl2 implements UserDao {
 }
