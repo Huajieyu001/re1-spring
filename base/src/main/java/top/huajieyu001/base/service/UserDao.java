@@ -1,5 +1,5 @@
 package top.huajieyu001.base.service;
 
-public interface UserService {
+public interface UserDao {
     void print();
 }
