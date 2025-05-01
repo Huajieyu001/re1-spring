@@ -1,2 +1,5 @@
-package top.huajieyu001.base.service.inter;public class Person {
+package top.huajieyu001.base.service.inter;
+
+public interface Person {
+
 }

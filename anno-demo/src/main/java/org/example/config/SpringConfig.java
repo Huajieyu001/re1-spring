@@ -1,6 +1,9 @@
-package org.example.congif;
+package org.example.config;
 
+import org.example.service.UserService;
+import org.example.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
@@ -12,4 +15,15 @@ import org.springframework.context.annotation.ComponentScan;
 @Configurable
 @ComponentScan("org.example")
 public class SpringConfig {
+
+    @Bean
+    public String hello(UserService userService) {
+        System.out.println(userService);
+        return "hello";
+    }
+
+//    @Bean
+//    public UserService userService() {
+//        return new UserServiceImpl();
+//    }
 }

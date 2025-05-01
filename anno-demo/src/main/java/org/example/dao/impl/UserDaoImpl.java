@@ -1,4 +1,8 @@
-package org.example.dao;
+package org.example.dao.impl;
+
+import org.example.dao.UserDao;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Repository;
 
 /**
  * @Author huajieyu
@@ -6,5 +10,7 @@ package org.example.dao;
  * @Version 1.0
  * @Description TODO
  */
-public class UserDaoImpl {
+@Repository("userDao")
+//@Profile("test") // 标注本类在指定环境下生效
+public class UserDaoImpl implements UserDao {
 }
